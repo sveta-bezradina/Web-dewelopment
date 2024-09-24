@@ -1,0 +1,36 @@
+.banner {
+  width: 100%;
+  height: 600px;
+  background-image: url('../../../public/img/background_baner.jpg');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+.banner_content {
+  backdrop-filter:blur(7px);
+  padding: 20px;
+  border-radius: 10px;
+}
+.banner h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+.banner p {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+.banner-button {
+  font-size: 1.2em;
+  color: white;
+  background-color: #ff5722;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
