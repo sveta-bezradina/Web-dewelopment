@@ -1,0 +1,130 @@
+.Btn {
+  background: #ff5722;
+  color: white;
+  font-family: inherit;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 10px;
+  font-weight: 500;
+  border-radius: 0.9em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+  cursor: pointer;
+  font-family: system-ui;
+}
+.Btn .icon {
+  background: white;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #27241c;
+  right: 0.3em;
+  transition: all 0.3s;
+}
+.Btn:hover .icon {
+  width: calc(100% - 0.6em);
+}
+.Btn .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: #000000;
+}
+.Btn:hover .icon svg {
+  transform: translateX(0.1em);
+}
+.Btn:active .icon {
+  transform: scale(0.95);
+}
+.field {
+  margin-top: .5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5em;
+  background-color: #1f1b168a;
+  border-radius: 4px;
+  padding: .5em 1em;
+}
+.input-icon {
+  height: 1em;
+  width: 1em;
+  fill: #b3b0aa;
+}
+.input-field {
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  color: #d3d3d3;
+}
+.login {
+  margin-bottom: 1rem;
+  font-size: 1.5em;
+  font-weight: 500;
+  color: #f5f5f5;
+  font-family: system-ui;
+ }
+.btn-login {
+ margin: 1rem;
+ border: none;
+ border-radius: 4px;
+ font-weight: bold;
+ font-size: .8em;
+ text-transform: uppercase;
+ padding: 0.6em 1.2em;
+ background-color: #7e7761;
+ color: #000000a9;
+ box-shadow: 0 8px 24px 0 rgb(255 235 167 / 20%);
+ transition: all .3s ease-in-out;
+}
+.btn-link {
+ color: #f5f5f5;
+ display: block;
+ font-size: .75em;
+  transition: color .3s ease-out;
+}
+.field input:focus::placeholder {
+ opacity: 0;
+ transition: opacity .3s;
+}
+.btn-login:hover {
+ background-color: #afa4998a;
+ color: #2c2b28;
+ box-shadow: 0 8px 24px 0 rgba(172, 104, 52, 0.2);
+}
+.modal {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  position:fixed;
+  z-index:10;
+}
+.modal-content {
+  background-color: rgb(71, 71, 71);
+  padding: 20px;
+  border-radius: 5px;
+  width: 300px;
+  padding: 1.9rem 1.2rem;
+  text-align: center;
+}
+.close {
+  cursor: pointer;
+  float: right;
+}
