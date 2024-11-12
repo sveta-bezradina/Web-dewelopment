@@ -1,0 +1,36 @@
+.comment-item-enter {
+  opacity: 0;
+}
+
+.comment-item-enter-active {
+  opacity: 1;
+  transition: opacity 300ms;
+}
+
+.comment-item-exit {
+  opacity: 1;
+}
+
+.comment-item-exit-active {
+  opacity: 0;
+  transition: opacity 300ms;
+}
+
+/* Анімація для модалки */
+.window-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+.window-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+.window-exit {
+  opacity: 1;
+}
+.window-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
+}
