@@ -1,0 +1,45 @@
+/* Анімація для модалки */
+.modal-enter {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+.modal-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.modal-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.modal-exit-active {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 300ms, transform 300ms;
+}
+
+/* Анімація для коментарів */
+.comment-item-enter {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+.comment-item-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 500ms, transform 500ms;
+}
+
+.comment-item-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.comment-item-exit-active {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 500ms, transform 500ms;
+}

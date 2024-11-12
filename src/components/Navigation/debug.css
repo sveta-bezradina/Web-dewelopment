@@ -1,0 +1,22 @@
+.debug {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    max-width: 200px;
+    font-size: 0.9rem;
+    overflow-y: auto;
+  }
+  .debug ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  .debug h4 {
+    margin: 0;
+    padding-bottom: 5px;
+    font-size: 1rem;
+    text-align: center;
+  }
+  
