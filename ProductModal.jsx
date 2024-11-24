@@ -10,23 +10,8 @@ import { Formik, Form, Field } from "formik";
 import { Input, Button } from "antd";
 
 const ProductModal = ({ isOpen, onClose, product, onAddComment, currency, updateProductComments }) => {
-  // const [comment, setComment] = useState('');
   const [comments, setComments] = useState(product.comments);
   const { price } = useCurrency(product, currency);
-
-  // const handleCommentSubmit = (e) => {
-  //   e.preventDefault();
-  //   if (comment.trim()) {
-  //     const newComments = [...comments, comment];
-  //     setComments(newComments);
-  //     onAddComment(product.id, comment);
-  //     updateProductComments(product.id, newComments);
-  //     alert(`Ваш відгук: "${comment}" додано успішно!`);
-  //     setComment('');
-  //   }  else {
-  //     alert("Будь ласка, введіть коментар перед відправкою.");
-  //   }
-  // };
 
   const handleCommentSubmit = (comment, { resetForm }) => {
     if (comment.trim()) {
@@ -35,7 +20,7 @@ const ProductModal = ({ isOpen, onClose, product, onAddComment, currency, update
       onAddComment(product.id, comment);
       updateProductComments(product.id, newComments);
       alert(`Ваш відгук: "${comment}" додано успішно!`);
-      resetForm(); // Очищаємо форму після успішного додавання
+      resetForm();
     } else {
       alert("Будь ласка, введіть коментар перед відправкою.");
     }
@@ -55,19 +40,6 @@ const ProductModal = ({ isOpen, onClose, product, onAddComment, currency, update
           <h4 className={styles.product_title}>{product.name}</h4>
           <img src={product.image} alt={product.name} className={styles.product_image} />
           <p className={styles.product_price}>{price} {currency}</p>
-
-          {/* <form onSubmit={handleCommentSubmit}>
-            <div className={styles.field}>
-              <textarea
-                placeholder="Leave a comment..."
-                className={styles.comment_input}
-                value={comment}
-                onChange={(e) => setComment(e.target.value)}
-                required
-              />
-            </div>
-            <button className={styles.btn_submit} type="submit">Add Comment</button>
-          </form> */}
 
           <Formik
                 initialValues={{ comment: "" }}
